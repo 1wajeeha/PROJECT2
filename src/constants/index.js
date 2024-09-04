@@ -1,5 +1,5 @@
 
-import Welcome from "../components/home/welcome";
+import Welcome from "../components/HomeComponents/Welcome/Welcome";
 export {
   Welcome
 }
