@@ -7,8 +7,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   slide: {
-    justifyContent: 'center',
-    alignItems: 'center',
+    // justifyContent: 'center',
+    // alignItems: 'center',
     height: Dimensions.get('window').height * 0.4, // Adjust the height as needed
   },
   image: {

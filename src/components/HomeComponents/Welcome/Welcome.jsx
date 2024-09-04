@@ -12,21 +12,20 @@ const Welcome = () => {
         <View style={{ flex: 1 }}>
             <View style={styles.container}>
                 <Text style={styles.WelcomeTxt}>Find The Most</Text>
-                <Text style={[styles.WelcomeTxt, { color: 'purple', fontSize: 30 }]}>Luxurious Furniture</Text>
+                <Text style={[styles.WelcomeTxt, { color: 'purple', fontSize: 30 }]}>SHOES</Text>
             </View>
+
             <View style={styles.searchContainer}>
-                <TouchableOpacity>
-                    <Feather name="search" size={24} style={styles.searchIcon} />
-                </TouchableOpacity>
                 <TouchableOpacity style={styles.searchWrapper} onPress={() => navigation.navigate("Search")}>
+                    <Feather name="search" size={20} style={styles.searchIcon} />
                     <TextInput
                         style={styles.searchInput}
                         value={""}
-                        placeholder={"What are you looking for?"}
+                        placeholder="What are you looking for?"
                         placeholderTextColor={'grey'}
-                        editable={false}  // Prevents text input and forces focus on touch
                     />
                 </TouchableOpacity>
+
                 <TouchableOpacity style={styles.searchBtn}>
                     <Ionicons name="camera-outline" size={24} color={'white'} />
                 </TouchableOpacity>

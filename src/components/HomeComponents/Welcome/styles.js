@@ -21,19 +21,22 @@ export const styles = StyleSheet.create({
     width: '90',
   },
   searchIcons: {
-    marginHorizontal: 10,
+    marginHorizontal: 20,
     color: 'black',
+    marginTop: 15,
   },
   searchWrapper: {
     width: '80%',
     backgroundColor: 'white',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   searchInput: {
     fontWeight: 'bold',
     width: '100%',
-    paddingHorizontal: 10,
+    paddingHorizontal: 5,
     color: 'black',
-    // backgroundColor: "green",
   },
   searchBtn: {
     width: '20%',
@@ -45,7 +48,9 @@ export const styles = StyleSheet.create({
     borderTopRightRadius: 9,
     borderBottomRightRadius: 9,
   },
-  searchIcon: {},
+  searchIcon: {
+    paddingLeft: 30,
+  },
 });
 
 export default styles;

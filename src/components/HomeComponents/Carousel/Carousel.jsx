@@ -1,7 +1,7 @@
 import React from 'react';
 import { Dimensions, View, Image } from 'react-native';
 import styles from './styles';
-import Carousel from 'react-native-snap-carousel';
+// import Carousel from 'react-native-snap-carousel';
 
 const CarouselComponent = () => {
     const slides = [
@@ -10,25 +10,14 @@ const CarouselComponent = () => {
         "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
     ];
 
-    const renderItem = ({ item, index }) => {
-        return (
+    return (
+        <View style={styles.carouselContainer}>
             <View style={styles.slide}>
                 <Image
-                    source={{ uri: item }}
+                    source={{ uri: slides[0] }}
                     style={styles.image}
                 />
             </View>
-        );
-    };
-
-    return (
-        <View style={styles.carouselContainer}>
-            <Carousel
-                data={slides}
-                renderItem={renderItem}
-                sliderWidth={Dimensions.get('window').width}
-                itemWidth={Dimensions.get('window').width}
-            />
         </View>
     );
 };

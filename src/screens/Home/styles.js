@@ -17,7 +17,8 @@ const styles = StyleSheet.create({
   },
   location: {
     fontFamily: 'bold',
-    fontSize: 20,
+    fontWeight: '400',
+    fontSize: 30,
     color: 'black',
   },
   cartCount: {

@@ -11,7 +11,7 @@ const Heading = () => {
             <View style={styles.header}>
                 <Text style={styles.headerTitle}>New Rivals</Text>
                 <TouchableOpacity>
-                    <Ionicons name='ios-grid' size={24} color={"pink"} />
+                    <Ionicons name='grid' size={30} color={"grey"} />
                 </TouchableOpacity>
             </View>
         </View>

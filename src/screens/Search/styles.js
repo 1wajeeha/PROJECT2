@@ -5,12 +5,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    // backgroundColor: "pink",
     borderRadius: 10,
     marginHorizontal: 14,
     marginVertical: 10,
     width: '90',
-    backgroundColor: 'yellow',
+   
   },
   SearchIcons: {
     marginHorizontal: 10,

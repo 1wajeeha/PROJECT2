@@ -6,12 +6,12 @@ const styles = StyleSheet.create({
     height: 240,
     marginEnd: 22,
     borderRadius: 12,
-    backgroundColor: 'grey',
+    backgroundColor: 'black',
   },
   imageContainer: {
     flex: 1,
-    width: 170,
-    marginLeft: 10,
+    width: 70,
+    marginLeft: 20,
     marginTop: 12,
     borderRadius: 12,
     overflow: 'hidden',
@@ -21,27 +21,30 @@ const styles = StyleSheet.create({
     resizeMode: 'cover',
   },
   details: {
-    padding: 12,
+    padding: 10,
   },
   title: {
     fontFamily: 'bold',
-    fontSize: 14,
+    fontSize: 8,
     marginBottom: 1,
   },
   supplier: {
     fontFamily: 'bold',
-    fontSize: 14,
+    fontSize: 8,
     marginBottom: 1,
   },
   price: {
     fontFamily: 'bold',
-    fontSize: 14,
+    fontSize: 8,
     marginBottom: 1,
+    color: 'purple',
   },
   addBtn: {
     position: 'absolute',
-    bottom: 12,
-    right: 12,
+    // bottom: 1,
+    // left: 10,
+    right: 20,
+    top: 100,
   },
 });
 

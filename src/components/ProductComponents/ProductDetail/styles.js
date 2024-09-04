@@ -1,16 +1,17 @@
 import {StyleSheet} from 'react-native';
+
 const styles = StyleSheet.create({
   container: {
-    marginTop: 12,
-    marginHorizontal: 12,
+    flex: 1,
   },
-  header: {
+  upperRow: {
+    marginHorizontal: 20,
     flexDirection: 'row',
     justifyContent: 'space-between',
-  },
-  headerTitle: {
-    fontSize: 20,
-    color: 'black',
+    alignItems: 'center',
+    position: 'absolute',
+    top: 10,
+    width: 12,
   },
 });
 export default styles;

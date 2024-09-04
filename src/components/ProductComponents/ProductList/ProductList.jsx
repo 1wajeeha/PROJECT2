@@ -1,6 +1,7 @@
-import { View, Text, FlatList } from 'react-native'
 import React from 'react'
+import { View, Text, FlatList } from 'react-native'
 import { ProductCardView } from '../../../components'
+import styles from './styles'
 
 const ProductRow = () => {
   const products = [1, 2, 3, 4]
@@ -8,7 +9,7 @@ const ProductRow = () => {
     <View style={{ marginTop: 12 }}>
       <FlatList
         data={products}
-        renderItem={({ items }) => <ProductCardView />}
+        renderItem={({ item }) => <ProductCardView />}
         horizontal
         contentContainerStyle={{ columnGap: 12 }}
       />
