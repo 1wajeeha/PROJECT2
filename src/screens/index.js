@@ -1,9 +1,5 @@
-import Search from "./Search.jsx"
-import Home from "./Home.jsx"
-import Profile from "./Profile.jsx"
+import Home from './Home/Home.jsx';
+import Search from './Search/Search.jsx';
+import Profile from './Profile/Profile.jsx';
 
-export{
-  Home,
-  Profile,
-  Search
-}
+export {Home, Search, Profile};

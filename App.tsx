@@ -1,22 +1,23 @@
-import { NavigationContainer} from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
 import React from 'react';
-import {View,Text} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import BottomTabNavigator from "./src/navigation/BottomTabNavigator";
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
 
-import BottomTabNavigator from './src/assets/navigation/BottomTabNavigator';
-const Stack =createNativeStackNavigator();
+const Stack = createNativeStackNavigator();
 const App = () => {
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName='BottomNavigation'>
-        <Stack.Screen
-        name='BottomNavigation'
-        component={BottomTabNavigator}
-        options={{headerShown:false }}
-        />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <GestureHandlerRootView style={{flex: 1}}>
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName="BottomNavigation">
+          <Stack.Screen
+            name="BottomNavigation"
+            component={BottomTabNavigator}
+            options={{headerShown: false}}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </GestureHandlerRootView>
   );
 };
 
