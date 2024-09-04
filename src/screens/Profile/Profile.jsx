@@ -13,7 +13,7 @@ export default Profile;
 
 const styles = StyleSheet.create({
   textStyle: {
-    fontWeight: 'bold',  
+    fontWeight: 'bold',
     fontSize: 20,
     color: 'black',
   },

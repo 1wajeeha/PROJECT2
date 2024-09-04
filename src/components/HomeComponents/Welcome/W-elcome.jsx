@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, TextInput } from 'react-native';
-import styles from './welcome.style';  // Ensure this file exists and the styles are properly defined
+import styles from './styles';  // Ensure this file exists and the styles are properly defined
 import Ionicons from 'react-native-vector-icons/Ionicons';  // Correct import for Ionicons
 import Feather from 'react-native-vector-icons/Feather';  // Correct import for Feather
 import { useNavigation } from '@react-navigation/native';

@@ -2,13 +2,12 @@ import React from 'react';
 import { Text, SafeAreaView, View, TouchableOpacity, ScrollView } from 'react-native';
 import Icons from 'react-native-vector-icons/Fontisto';
 import styles from './styles';
-import { Heading, Carousel, Welcome } from '../../components'
+import { Heading, Carousel, Welcome, ProductCardView, Product, ProductRow, ProductDetail } from '../../components'
 
 const Home = () => {
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: 'grey' }}>
-      <Text style={styles.textStyle}>Home</Text>
-      <View style={styles.appBarWrapper}>
+    <SafeAreaView style={{ flex: 1 }}>
+      {/* <View style={styles.appBarWrapper}>
         <View style={styles.appBar}>
           <Icons name='home' size={24} />
           <Text style={styles.location}>LAHORE</Text>
@@ -21,12 +20,12 @@ const Home = () => {
             </TouchableOpacity>
           </View>
         </View>
-      </View>
+      </View> */}
       <ScrollView>
         <Welcome />
-        <Carousel />
+        {/* <Carousel />
         <Heading />
-        <Product />
+        <Product /> */}
       </ScrollView>
     </SafeAreaView>
   )

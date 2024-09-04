@@ -1,8 +1,8 @@
 import { View, Text } from 'react-native'
 import React from 'react'
-import styles from './home.style'
+import styles from './styles'
 import { TouchableOpacity } from 'react-native-gesture-handler'
-import { Ionicons } from "react-native-vector-icons";
+import Ionicons from "react-native-vector-icons/Ionicons";
 
 
 const Heading = () => {
