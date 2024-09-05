@@ -30,8 +30,8 @@ const ProductDetails = ({ navigation }) => {
         </TouchableOpacity>
       </View>
       <Image
-        source={{ uri: "https://unsplash.com/photos/a-view-of-a-beach-through-a-cave--TJGAtPA7GQ" }}
-        style={styles.image} />
+        source={{ uri: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=2798&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" }}
+        style={styles.imageStyle} />
 
 
 
@@ -39,7 +39,7 @@ const ProductDetails = ({ navigation }) => {
         <View style={styles.titleRow}>
           <Text style={styles.title}>Product</Text>
           <View style={styles.priceWrapper}>
-            <Text style={styles.price}></Text>
+            <Text style={styles.price}>$34.55</Text>
           </View>
         </View>
 
@@ -54,46 +54,45 @@ const ProductDetails = ({ navigation }) => {
                 color="gold" />
             ))}
 
-            <Text style={styles.ratingText}>(4.9)</Text>
+            {/* <Text style={styles.ratingText}>(4.9)</Text> */}
           </View>
 
           <View style={styles.rating}>
-            <TouchableOpacity onPress={() => increment()}>
+            {/* <TouchableOpacity onPress={() => increment()}>
               <SimpleLineIcons
                 name='plus' size={20} />
-            </TouchableOpacity>
-            <Text style={styles.ratingText}>(4.9)</Text>
+            </TouchableOpacity> */}
+            {/* <Text style={styles.ratingText}>(4.9)</Text> */}
 
-            <TouchableOpacity onPress={() => decrement()}>
+            {/* <TouchableOpacity onPress={() => decrement()}>
               <SimpleLineIcons
                 name='minus' size={20} />
-            </TouchableOpacity>
+            </TouchableOpacity> */}
           </View>
         </View>
         <View style={styles.descriptionWrapper}>
           <Text style={styles.description}></Text>
-          <Text style={styles.descText}> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt est labore nam eius expedita quisquam, eum accusantium voluptates
-            qui a ut voluptas quis dicta esse corrupti vel animi at magni.
-          </Text>
+          {/* <Text style={styles.descText}> Loremi
+          </Text> */}
         </View>
 
-        <View style={{ marginBottom: 12 }}>
+        <View style={{ marginBottom: 24 }}>
           <View style={styles.location} />
           <View style={{ flexDirection: "row" }}>
-            <Ionicons name='location' size={24} />
-            <Text>LAHORE</Text>
+            {/* <Ionicons name='location' size={24} /> */}
+            {/* <Text>LAHORE</Text> */}
           </View>
 
           <View style={{ marginBottom: 12 }}>
             <View style={styles.location} />
             <View style={{ flexDirection: "row" }}>
-              <Feather name='truck' size={24} />
-              <Text>Free Delivery</Text>
+              {/* <Feather name='truck' size={24} /> */}
+              {/* <Text>Free Delivery</Text> */}
             </View>
           </View>
         </View>
       </View>
-    </View>
+    </View >
   )
 }
 
