@@ -1,12 +1,13 @@
 import React from 'react'
 import { View, Text, FlatList } from 'react-native'
-import { ProductCardView } from '../../../components'
+import ProductCardView from "../PoductCardView/ProductCardView";
 import styles from './styles'
+
 
 const ProductRow = () => {
   const products = [1, 2, 3, 4]
   return (
-    <View style={{ marginTop: 12 }}>
+    <View style={styles.container}>
       <FlatList
         data={products}
         renderItem={({ item }) => <ProductCardView />}

@@ -9,7 +9,6 @@ const styles = StyleSheet.create({
     marginHorizontal: 14,
     marginVertical: 10,
     width: '90',
-   
   },
   SearchIcons: {
     marginHorizontal: 10,
@@ -28,7 +27,6 @@ const styles = StyleSheet.create({
     width: '100%',
     paddingHorizontal: 10,
     color: 'black',
-    // backgroundColor: "green",
   },
   searchBtn: {
     width: '20%',
