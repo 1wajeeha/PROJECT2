@@ -19,69 +19,76 @@ const styles = StyleSheet.create({
     resizeMode: 'cover',
   },
   details: {
-    // marginTop: 1,
-    backgroundColor: 'skyblue',
-    // width: 50,
-    // borderTopLeftRadius: 10,
-    // borderTopRightRadius: 12,
-    flexDirection: 'row',
+    padding: 10,
   },
   titleRow: {
-    // marginHorizontal: 20,
-    // paddingBottom: 10,
-    // flexDirection: 'row',
-    // justifyContent: 'center',
-    // alignItems: 'center',
-    // width: 10,
-    // top: 20,
-  },
-
-  rating: {
-    top: 12,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginHorizontal: 14,
-  },
-  ratingText: {
-    // color: 'grey',
-    fontFamily: 'medium',
-  },
-  descriptionWrapper: {
-    marginTop: 14,
-    marginHorizontal: 15,
-  },
-  description: {
-    fontFamily: 'medium',
-    fontSize: 12,
-  },
-  descText: {
-    fontFamily: 'regualr',
-    fontSize: 12,
-    textAlign: 'justify',
-    marginBottom: 12,
-  },
-  location: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    // backgroundColor: 'sky',
-    padding: 15,
-    borderRadius: 14,
   },
   title: {
     fontFamily: 'bold',
-    fontSize: 14,
+    fontSize: 16,
+    flex: 1,
   },
   price: {
-    paddingHorizontal: 10,
     fontFamily: 'semibold',
-    fontSize: 14,
-    flexDirection: 'row',
+    fontSize: 16,
+    backgroundColor: '#ff4081',
+    paddingHorizontal: 10,
+    textAlign: 'right',
+    borderRadius: 10,
   },
-  priceWrapper: {
-    // backgroundColor: 'sky',
-    borderRadius: 14,
+  ratingRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingBottom: 10,
+  },
+  rating: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    top: 7,
+    backgroundColor: '#f0f0f0',
+    borderRadius: 10,
+    paddingVertical: 3,
+  },
+  ratingText: {
+    color: 'grey',
+    fontFamily: 'medium',
+    fontSize: 14,
+    marginLeft: 5,
+  },
+  description: {
+    color: 'black',
+    marginTop: 20,
+  },
+  cartRow: {
+    // marginLeft: 10,
+    padding: 10,
+    width: '90%', // Use '100%' to make sure it takes the full width of the container
+    borderRadius: 20,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  cartBtn: {
+    backgroundColor: 'black',
+    borderRadius: 20,
+    padding: 10,
+    flex: 1, // Make the button take up available space
+  },
+  cartTitle: {
+    color: 'white',
+    textAlign: 'center',
+  },
+  addCart: {
+    width: 27,
+    margin: 10,
+    borderRadius: 7,
+    backgroundColor: 'pink',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
+
 export default styles;
