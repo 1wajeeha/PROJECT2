@@ -23,16 +23,16 @@ const ProductDetails = ({ navigation }) => {
     <View style={styles.container}>
       <View style={styles.upperRow}>
         <TouchableOpacity onPressIn={() => navigation.goBack()}>
-          <AntDesign name='leftcircle' size={20} />
+          <AntDesign name='leftcircle' size={30} />
         </TouchableOpacity>
 
         <TouchableOpacity onpress={() => { }}>
-          <Ionicons name='heart' size={20} />
+          <Ionicons name='heart' size={30} />
         </TouchableOpacity>
       </View>
 
       <Image
-        source={{ uri: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=2798&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" }}
+        source={{ uri: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" }}
         style={styles.imageStyle} />
 
       <View style={styles.details}>
@@ -79,7 +79,7 @@ const ProductDetails = ({ navigation }) => {
         </View>
 
 
-        <View style={{ flexDirection: "row", justifyContent: "space-between", marginBottom: 60, alignItems: 'center' }}>
+        <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: 'center' }}>
 
           <View style={{ flexDirection: "row", alignItems: "center", marginTop: 20 }}>
             <Ionicons name='location' size={20} />
@@ -98,13 +98,13 @@ const ProductDetails = ({ navigation }) => {
         <TouchableOpacity onPress={() => { }} style={styles.cartBtn}>
           <Text style={styles.cartTitle}>BUY NOW</Text>
         </TouchableOpacity>
+
+
+        <TouchableOpacity onPress={() => { }} style={styles.addCart}>
+          <Ionicons name="cart" size={24} color="white" />
+        </TouchableOpacity>
       </View>
-
-      {/* <TouchableOpacity onPress={() => { }} style={styles.addCart}>
-        <Ionicons name="cart" />
-      </TouchableOpacity> */}
     </View>
-
   )
 }
 

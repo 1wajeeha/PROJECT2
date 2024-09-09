@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
   cartRow: {
     // marginLeft: 10,
     padding: 10,
-    width: '90%', // Use '100%' to make sure it takes the full width of the container
+    width: '100%',
     borderRadius: 20,
     flexDirection: 'row',
     justifyContent: 'center',
@@ -75,19 +75,20 @@ const styles = StyleSheet.create({
     backgroundColor: 'black',
     borderRadius: 20,
     padding: 10,
-    flex: 1, // Make the button take up available space
+    flex: 1,
   },
   cartTitle: {
     color: 'white',
     textAlign: 'center',
   },
   addCart: {
-    width: 27,
+    width: 47,
     margin: 10,
-    borderRadius: 7,
-    backgroundColor: 'pink',
+    borderRadius: 20,
+    backgroundColor: 'black',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingBottom: 5,
   },
 });
 

@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     height: 240,
     marginEnd: 22,
     borderRadius: 12,
-    backgroundColor: 'skyblue',
+    backgroundColor: 'white',
   },
   imageContainer: {
     flex: 1,

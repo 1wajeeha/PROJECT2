@@ -7,7 +7,7 @@ import { ProductDetail } from '../..';
 import { Screen } from 'react-native-screens';
 
 
-const ProductCardView = () => {
+const ProductCardView = ({ items }) => {
   const navigation = useNavigation();
   return (
     <TouchableOpacity onPress={() => navigation.navigate("ProductDetails")}>
@@ -22,13 +22,13 @@ const ProductCardView = () => {
         <ScrollView>
           <View style={styles.details}>
             <Text style={styles.title} numberOfLines={1}>
-              Product
+              {items.title}
             </Text>
             <Text style={styles.supplier} numberOfLines={1}>
-              Supplier
+              {items.supplier}
             </Text>
             <Text style={styles.price}>
-              $2543
+              ${items.price}
             </Text>
           </View>
         </ScrollView>
