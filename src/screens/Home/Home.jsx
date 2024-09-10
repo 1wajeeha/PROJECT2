@@ -3,7 +3,7 @@ import { Text, SafeAreaView, View, TouchableOpacity, ScrollView } from 'react-na
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import styles from './styles';
-import { Heading, Carousel, Welcome, Product, ProductList } from '../../components'
+import { Heading, Carousel, Welcome, ProductList } from '../../components'
 
 const Home = () => {
   return (
@@ -22,7 +22,7 @@ const Home = () => {
           </View>
         </View>
       </View>
-      <ScrollView>
+      <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
         <Welcome />
         <Carousel />
         <Heading />

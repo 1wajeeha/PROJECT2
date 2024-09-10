@@ -3,18 +3,18 @@ import { TouchableOpacity, View, Text, Image, ScrollView } from 'react-native';
 import styles from "./styles";
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
-import { ProductDetail } from '../..';
-import { Screen } from 'react-native-screens';
 
 
-const ProductCardView = ({ items }) => {
+const ProductItem = ({ item }) => {
   const navigation = useNavigation();
   return (
-    <TouchableOpacity onPress={() => navigation.navigate("ProductDetails")}>
+    <TouchableOpacity onPress={() => navigation.navigate("ProductDetails", { id: item._id })}>
       <View style={styles.container}>
         <View style={styles.imageContainer}>
           <Image
-            source={{ uri: "https://images.unsplash.com/photo-1542291026-7eec264c27ff" }}
+            source={{
+              uri: item.imageUrl,
+            }}
             style={styles.image}
           />
         </View>
@@ -22,13 +22,13 @@ const ProductCardView = ({ items }) => {
         <ScrollView>
           <View style={styles.details}>
             <Text style={styles.title} numberOfLines={1}>
-              {items.title}
+              {item.title}
             </Text>
             <Text style={styles.supplier} numberOfLines={1}>
-              {items.supplier}
+              {item.supplier}
             </Text>
             <Text style={styles.price}>
-              ${items.price}
+              ${item.price}
             </Text>
           </View>
         </ScrollView>
@@ -41,4 +41,4 @@ const ProductCardView = ({ items }) => {
   );
 };
 
-export default ProductCardView;
+export default ProductItem;

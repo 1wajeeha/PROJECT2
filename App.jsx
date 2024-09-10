@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import BottomTabNavigator from './src/navigation/BottomTabNavigator';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import { ProductDetails, Cart } from './src/screens';
+import { ProductDetails, Cart, NewRivals } from './src/screens';
 
 const Stack = createNativeStackNavigator();
 const App = () => {
@@ -24,6 +24,11 @@ const App = () => {
           <Stack.Screen
             name="ProductDetails"
             component={ProductDetails}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="ProductList"
+            component={NewRivals}
             options={{ headerShown: false }}
           />
         </Stack.Navigator>
