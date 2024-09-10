@@ -2,49 +2,48 @@ import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    width: 182,
+    width: 120,
     height: 240,
     marginEnd: 22,
     borderRadius: 12,
-    backgroundColor: 'black',
+    backgroundColor: 'white',
   },
   imageContainer: {
     flex: 1,
-    width: 70,
-    marginLeft: 20,
-    marginTop: 12,
-    borderRadius: 12,
-    overflow: 'hidden',
+    width: 120,
+    // marginLeft: 20,
+    // marginTop: 12,
+    // borderRadius: 12,
+    // overflow: 'hidden',
   },
   image: {
     aspectRatio: 1,
     resizeMode: 'cover',
   },
   details: {
-    padding: 10,
+    padding: 5,
   },
   title: {
     fontFamily: 'bold',
-    fontSize: 8,
-    marginBottom: 1,
+    fontSize: 10,
+    // marginBottom: 2,
+    marginTop: 60,
   },
   supplier: {
     fontFamily: 'bold',
-    fontSize: 8,
-    marginBottom: 1,
+    fontSize: 10,
+    marginBottom: 2,
   },
   price: {
     fontFamily: 'bold',
-    fontSize: 8,
-    marginBottom: 1,
+    fontSize: 10,
+    marginBottom: 2,
     color: 'purple',
   },
   addBtn: {
     position: 'absolute',
-    // bottom: 1,
-    // left: 10,
-    right: 20,
-    top: 100,
+    bottom: 70,
+    right: 10,
   },
 });
 

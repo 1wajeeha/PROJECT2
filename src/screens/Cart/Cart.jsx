@@ -1,19 +1,19 @@
 import React from 'react';
 import { Text, SafeAreaView, StyleSheet, View } from 'react-native';
 
-const Profile = () => {
+const Cart = () => {
   return (
     <View>
-      <Text style={styles.textStyle}>Profile</Text>
+      <Text style={styles.textStyle}>Cart</Text>
     </View>
   );
 }
 
-export default Profile;
+export default Cart;
 
 const styles = StyleSheet.create({
   textStyle: {
-    fontWeight: 'bold',  
+    fontWeight: 'bold',
     fontSize: 20,
     color: 'black',
   },

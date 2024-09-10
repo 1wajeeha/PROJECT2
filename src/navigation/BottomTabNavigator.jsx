@@ -1,8 +1,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import React from 'react';
-import Icon from 'react-native-vector-icons/FontAwesome';
+// import Icon from 'react-native-vector-icons/FontAwesome';
 import AntDesign from 'react-native-vector-icons/AntDesign';
-
 
 import { Home, Profile, Search } from '../screens';
 
@@ -23,7 +22,6 @@ const screenOptions = {
 
 const BottomTabNavigation = () => {
   return (
-
     <Tab.Navigator screenOptions={screenOptions}>
       <Tab.Screen
         name="Home"
