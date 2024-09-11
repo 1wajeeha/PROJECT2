@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import BottomTabNavigator from './src/navigation/BottomTabNavigator';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { ProductDetails, Cart, NewRivals } from './src/screens';
+// import { ArrivalList } from './src/components';
 
 const Stack = createNativeStackNavigator();
 const App = () => {

@@ -38,6 +38,12 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 9,
     borderBottomRightRadius: 9,
   },
+  searchImage: {
+    resizeMode: 'contain',
+    width: 100,
+    height: 10,
+    opacity: 0.9,
+  },
 });
 
 export default styles;

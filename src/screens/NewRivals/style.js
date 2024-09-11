@@ -1,31 +1,44 @@
 import {StyleSheet} from 'react-native';
-import {Heading} from '../../components';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    // backgroundColor: 'red',
   },
   wrapper: {
-    flex: 1,
+    flex: 0.2,
   },
   upperRow: {
     width: 400,
-    height: 24,
-    marginHorizontal: 15,
+    marginHorizontal: 10,
     flexDirection: 'row',
     justifyContent: 'flex-start',
     alignItems: 'center',
+    backgroundColor: 'red',
     position: 'absolute',
     backgroundColor: 'brown',
-    borderRadius: 100,
-    top: 20,
-    // zIndex: 999,
+    borderRadius: 14,
+    top: 15,
+    zIndex: 999,
   },
   Heading: {
+    fontWeight: '400',
     color: 'white',
-    fontWeight: '700',
-    marginLeft: 15,
+    marginLeft: 20,
+  },
+  listContainer: {
+    paddingHorizontal: 4,
+    height: '100%',
+    width: '100%',
+    alignSelf: 'center',
+    justifyContent: 'center',
+  },
+  itemContainer: {
+    height: 250,
+    width: '49%',
+    marginHorizontal: 5,
+    marginVertical: 5,
+    backgroundColor: 'red',
   },
 });
-
 export default styles;

@@ -22,7 +22,7 @@ const Home = () => {
           </View>
         </View>
       </View>
-      <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
+      <ScrollView contentContainerStyle={{ flexGrow: 1 }} >
         <Welcome />
         <Carousel />
         <Heading />

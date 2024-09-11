@@ -7,6 +7,7 @@ const styles = StyleSheet.create({
     marginEnd: 22,
     borderRadius: 12,
     backgroundColor: 'white',
+    marginVertical: 10,
   },
   imageContainer: {
     flex: 1,
